@@ -1,35 +1,186 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Jayanthi Paramasivam</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>Jayanthi Paramasivam | Data Analyst</title>
 
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            text-align: center;
-            margin-top: 100px;
-        }
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-        h1 {
-            color: #2563eb;
-        }
+<style>
 
-        p {
-            font-size: 18px;
-            color: #333;
-        }
-    </style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f4f6fb;
+    color: #333;
+}
 
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    opacity: 0.9;
+}
+
+.btn {
+    background: #2563eb;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    background: #1d4ed8;
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* SKILLS */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill {
+    background: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* PROJECTS */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    width: 280px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* CONTACT */
+.contact {
+    background: #111827;
+    color: white;
+    padding: 40px 20px;
+}
+
+a {
+    color: inherit;
+}
+
+</style>
 </head>
 
 <body>
 
-<h1>Hello, I'm Jayanthi Paramasivam</h1>
+<!-- HERO -->
+<div class="hero">
+    <h1>Jayanthi Paramasivam</h1>
+    <p>Data Analyst | Power BI Developer | SQL | Python | Tableau</p>
 
-<p>Power BI Developer</p>
+    <a class="btn" href="#projects">View Projects</a>
+    <a class="btn" href="mailto:yourmail@gmail.com">Hire Me</a>
+</div>
+
+<!-- ABOUT -->
+<section>
+    <h2>About Me</h2>
+    <p>
+        I am a Data Analyst skilled in Power BI, SQL, Python, and Tableau.
+        I transform data into meaningful insights for business decision-making.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section>
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="skill">Power BI</div>
+        <div class="skill">SQL</div>
+        <div class="skill">Python</div>
+        <div class="skill">Tableau</div>
+        <div class="skill">Excel</div>
+        <div class="skill">Data Analysis</div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+
+        <div class="card">
+            <h3>Sales Dashboard</h3>
+            <p>Power BI dashboard for sales insights and KPIs.</p>
+        </div>
+
+        <div class="card">
+            <h3>Netflix Analysis</h3>
+            <p>SQL-based data analysis on Netflix dataset.</p>
+        </div>
+
+        <div class="card">
+            <h3>Healthcare Dashboard</h3>
+            <p>Interactive dashboard for patient data analysis.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+    <h2>Contact</h2>
+    <p>Email: yourmail@gmail.com</p>
+    <p>LinkedIn: linkedin.com/in/yourprofile</p>
+</section>
 
 </body>
 </html>
