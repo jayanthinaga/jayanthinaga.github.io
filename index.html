@@ -1,147 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Data Analyst Portfolio</title>
 
-<title>Jayanthi Paramasivam | Data Analyst</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f6fb;
+            text-align: center;
+            color: #333;
+        }
 
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+        /* HEADER */
+        .header {
+            background: #1e3a8a;
+            color: white;
+            padding: 60px 20px;
+        }
 
-<style>
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
 
-/* RESET */
-body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #f4f6fb;
-    color: #333;
-}
+        .header p {
+            margin-top: 10px;
+            font-size: 18px;
+            opacity: 0.9;
+        }
 
-/* HERO SECTION */
-.hero {
-    height: 100vh;
-    background: linear-gradient(135deg, #0f172a, #1e3a8a);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-}
+        /* SECTIONS */
+        section {
+            padding: 40px 20px;
+        }
 
-.hero h1 {
-    font-size: 3rem;
-    margin: 0;
-}
+        .box {
+            background: white;
+            width: 70%;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        }
 
-.hero p {
-    font-size: 1.2rem;
-    margin: 15px 0;
-    opacity: 0.9;
-}
+        /* SKILLS */
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
 
-/* BUTTONS */
-.btn {
-    background: #2563eb;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 30px;
-    text-decoration: none;
-    margin: 10px;
-    display: inline-block;
-    transition: 0.3s ease;
-}
+        .skill {
+            background: #e0e7ff;
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
 
-.btn:hover {
-    transform: translateY(-3px);
-    background: #1d4ed8;
-}
+        /* CONTACT */
+        .contact {
+            background: #111827;
+            color: white;
+            padding: 30px 20px;
+        }
 
-/* SECTIONS */
-section {
-    padding: 70px 20px;
-    text-align: center;
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-/* SKILLS */
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-}
-
-.skill {
-    background: white;
-    padding: 15px 25px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-/* PROJECTS */
-.projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.card {
-    background: white;
-    width: 280px;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    transition: 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-8px);
-}
-
-/* CONTACT */
-.contact {
-    background: #111827;
-    color: white;
-    padding: 50px 20px;
-}
-
-.contact a {
-    color: #60a5fa;
-    text-decoration: none;
-}
-
-</style>
-
+        .contact a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- HERO -->
-<div class="hero">
-    <h1>Jayanthi Paramasivam</h1>
-    <p>Data Analyst | Power BI Developer | SQL | Python | Tableau</p>
-
-    <a class="btn" href="#projects">View Projects</a>
-    <a class="btn" href="mailto:yourmail@gmail.com">Hire Me</a>
+<!-- HEADER -->
+<div class="header">
+    <h1>Your Name</h1>
+    <p>Data Analyst | Power BI | SQL | Python | Tableau</p>
 </div>
 
 <!-- ABOUT -->
 <section>
     <h2>About Me</h2>
-    <p>
-        I am a Data Analyst skilled in Power BI, SQL, Python, and Tableau.
-        I transform raw data into meaningful insights for business decisions.
-    </p>
+    <div class="box">
+        I am a Data Analyst passionate about turning raw data into meaningful insights using Power BI, SQL, Python, and Tableau.
+    </div>
 </section>
 
 <!-- SKILLS -->
@@ -151,44 +96,19 @@ h2 {
         <div class="skill">Power BI</div>
         <div class="skill">SQL</div>
         <div class="skill">Python</div>
-        <div class="skill">Tableau</div>
         <div class="skill">Excel</div>
-        <div class="skill">Data Analysis</div>
-    </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-    <h2>Projects</h2>
-
-    <div class="projects">
-
-        <div class="card">
-            <h3>Sales Dashboard</h3>
-            <p>Power BI dashboard for sales insights and KPI tracking.</p>
-        </div>
-
-        <div class="card">
-            <h3>Netflix Analysis</h3>
-            <p>SQL-based analysis of Netflix dataset trends.</p>
-        </div>
-
-        <div class="card">
-            <h3>Healthcare Dashboard</h3>
-            <p>Interactive dashboard for healthcare insights.</p>
-        </div>
-
+        <div class="skill">Tableau</div>
     </div>
 </section>
 
 <!-- CONTACT -->
-<section class="contact">
+<div class="contact">
     <h2>Contact</h2>
-
-    <p>Email: yourmail@gmail.com</p>
-    <p>LinkedIn: linkedin.com/in/yourprofile</p>
-    <p>GitHub: github.com/yourusername</p>
-</section>
+    <p>Email: jayanthiparamasivam91@gmail.com</p>
+    <p>LinkedIn:www.linkedin.com/in/
+jayanthi-paramasivam
+</p>
+</div>
 
 </body>
 </html>
